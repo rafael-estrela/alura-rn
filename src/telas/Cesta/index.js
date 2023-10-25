@@ -1,17 +1,15 @@
 import React from 'react';
-import { Dimensions, StyleSheet, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import Topo from  './componentes/Topo';
 import Detalhes from './componentes/Detalhes';
 
-const width = Dimensions.get('screen').width;
-
-export default function Cesta() {
+export default function Cesta({ topo, detalhes }) {
     return <>
-        <Topo>Detalhes da cesta</Topo>
+        <Topo topo={ topo } />
 
         <View style={estilos.cesta}>
-            <Detalhes />
+            <Detalhes detalhes={ detalhes } />
         </View>
     </>;
 }
