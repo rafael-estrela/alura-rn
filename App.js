@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, StatusBar, SafeAreaView } from 'react-native';
+import { StatusBar, SafeAreaView } from 'react-native';
+import AppLoading from 'expo-app-loading'
 import Cesta from './src/telas/Cesta';
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat'
 import mock from './src/mocks/cesta';
@@ -11,7 +11,7 @@ export default function App() {
   });
 
   if (!fonteCarregada) {
-    return <View />
+    return <AppLoading />;
   }
 
   return (
