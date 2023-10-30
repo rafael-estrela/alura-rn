@@ -1,4 +1,4 @@
-import { FlatList, Image, StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 
 import Texto from '../../../componentes/Texto';
 
